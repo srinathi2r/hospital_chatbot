@@ -12,7 +12,7 @@ on:
   release:
     types: [published]
 env:
-  openaikey: ${{ secrets.openaikey }}
+  openaikey: ${{ secrets.OPENAIKEY }}
 permissions:
   contents: read
 
