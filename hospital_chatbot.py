@@ -3,7 +3,7 @@ import openai
 import streamlit as st
 
 # Set your OpenAI API key
-openaikey = os.environ["OPENAIKEY"]
+openaikey = os.environ.get("OPENAIKEY")
 openai.api_key = openaikey
 
 def get_openai_response(prompt, history):
