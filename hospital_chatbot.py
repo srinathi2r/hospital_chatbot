@@ -1,8 +1,10 @@
+import os
 import openai
 import streamlit as st
 
 # Set your OpenAI API key
-openai.api_key = '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'
+openaikey = os.environ["openaikey"]
+openai.api_key = openaikey
 
 def get_openai_response(prompt, history):
     try:
